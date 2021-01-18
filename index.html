@@ -3,10 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="src/css/index.css">
     <title>Document</title>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Où?</a></li>
+            <li><a href="#">Qui?</a></li>
+            <li><a href="#">Autres</a></li>
+        </ul>
+    </nav>
+
+
     <!-- commentaire une ligne  Raccourci clavier: Ctrl + '':''  -->
     <h1>Hello World</h1>
     <h2>Hello World</h2>
@@ -18,13 +28,15 @@
     <i>italique</i>
     <em>italique mais avec importance (pour exemple recherche web)</em>
     <!-- utiliser lorem pour écrire un texte ne latin random -->
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos tenetur quasi vitae minus alias odio incidunt itaque soluta ipsum eum error facere nam temporibus, in voluptas recusandae veniam odit. Ad.
+    <p class="testClass">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Quos tenetur quasi vitae minus alias odio incidunt itaque soluta ipsum eum error facere nam temporibus, 
+        in voluptas recusandae veniam odit. Ad.</p>
     <strong>gras mais avec importance (pour exemple recherche web)</strong>
     <br> pour le retour à la ligne
     <hr> ligne
     <del> pour barré le texte et montré sa non importance</del>
-<!-- target="_blank" sert à ouvrir dans un nouvel onglet le lien, sans, il le charge sur la page actuelle -->
-    <a href="http://www.google.be" title="Titre du lien" target="_blank">google</a>
+<!-- target="_blank" sert à ouvrir dans un nouvel onglet le lien, sans, il le charge sur la page actuelle /// noopener sert à protéger les infos du site quand on change de page -->
+    <a href="http://www.google.be" title="Titre du lien" target="_blank" rel="noopener">google</a>
    
    <!--  -->
     <img src="https://jardinage.lemonde.fr/images/dossiers/2017-08/chaton-161238.jpg" alt="Image de MiaouMiaou">
@@ -47,6 +59,96 @@
         plusieures 
         lignes
      -->
+<!-- div pour structurer une page et groupé des balises ensembles  -->
+<div>
+    
+</div>
 
+<h3>Les Tableaux</h3>
+<table>
+    <caption>Ceci est le titre du tableau</caption>
+    <tr>
+        <th>Nom</th>
+        <th>Prénom</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>Duck</td>
+        <td>Riri</td>
+        <td>12</td>
+    </tr>
+    <tr>
+        <td>Duck</td>
+        <td>Loulou</td>
+        <td>14</td>
+    </tr>
+    <tr>
+        <td>Duck</td>
+        <td>Fifi</td>
+        <td>13</td>
+    </tr>
+    <tr>
+        <td>Marek</td>
+        <td>Kodom</td>
+        <td>25</td>
+    </tr>
+</table>
+
+<form action="">
+    <!-- placeholder: montre ce que l'ont veu recevoir comme info -->
+    <!-- la balise required met qu'un input ets oblig&étoire -->
+    <p><input type="text" placeholder="Nom" name="nom" required></p>
+    <p><input type="color"></p>
+    <p><input type="checkbox"></p>
+    <p><input type="date"></p>
+    <!-- datetime-local ne marche pas sur firefox -->
+    <p><input type="datetime-local"></p>
+    <p><input type="email" ></p><br>
+     <!-- month ne marche pas sur firefox -->
+    <p><input type="month"></p>
+    <p><input type="number"></p>
+    <p><input type="password"></p>
+    <p><input type="radio"></p>
+    <p><input type="range"></p>
+    <p><input type="search"></p>
+    <p><input type="tel"></p>
+    <p><input type="time"></p>
+    <p><input type="url"></p>
+    <!-- week ne marche pas sur firefox -->
+    <p><input type="week"></p>
+    <p>Entrez votre nom</p>
+    <p><input type="text" placeholder="Nom" name="nom" required></p>
+    <p><label>Entrez votre nom</label></p>
+    <p><input type="text" placeholder="Nom" name="nom" required></p>
+
+    <div>
+        <select>
+            <option value="Pomme">Pomme</option>
+            <option value="Poire">Poire</option>
+            <option value="Ananas">Ananas</option>
+        </select>
+    </div>
+
+    <div>
+        <textarea cols="30" rows="10"></textarea>
+    </div>
+
+    <div>
+        <textarea cols="50" rows="20"></textarea>
+    </div>
+
+    <button type="submit">Valider mon formulaire</button>
+    <!-- la balise span sert à utiliser une certaine mise en forme dans un texte (exemple mettre en rouge) -->
+    <p>textetetetetetet<span style="color:blue">testtt</span>tetetetetetet</p>
+</form>
+<section>
+    <h3>ceci est un lorem</h3>
+    <p id="testid">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis ea optio voluptatum aliquam porro rem impedit minus illo laboriosam, dolorum illum veniam recusandae hic labore repellendus pariatur perferendis dolores. Consequuntur!</p>
+    <form>
+        <input type="button" value="">
+        <input type="email" name="" id=""><br>
+        <button type="submit">Valider</button>
+    </form>
+</section>
 </body>
 </html>
