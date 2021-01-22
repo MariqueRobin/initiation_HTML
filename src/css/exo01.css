@@ -1,0 +1,59 @@
+/* le * sert à faire en sorte qu'il y ait pas de marge blanche autour de la page et donc les "images etc" prendront totu l'écran */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* les balises html en css */
+p {
+    color: purple;
+}
+
+div, span {
+    font-weight: bold;
+    color: red;
+}
+
+h3{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+/* les classes en css */
+
+.bleu {
+    color: blue;
+}
+
+.rouge {
+    color: red;
+}
+
+.grasRouge{
+    color: red;
+    font-weight: bold;
+}
+
+/* les id en css */
+
+#idee{
+    color: seagreen;
+}
+
+/* en spécifiant quel balise grace à un attribut */
+
+a[href="http://www.google.be"]{
+    color: turquoise ;
+}
+
+/* les combinateurs */
+div span{
+    color: darkblue;
+}
+
+/*ïci, si derrière la div, la balsie enfant DIRECTE est un span, alors ça va appliqué */
+
+div > span{
+    color: darkgreen;
+    font-weight: normal;
+}

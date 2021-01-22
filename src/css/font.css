@@ -1,0 +1,73 @@
+.arial{
+    font-family: Arial;
+}
+
+.impact{
+    font-family: Impact;
+}
+
+.times {
+    font-family: Times;
+}
+
+.courier {
+    font-family: Courier;
+}
+
+.verdana {
+    font-family: Verdana;
+}
+
+.garamond {
+    font-family: Garamond;
+}
+
+.serif{
+    font-family:serif;
+}
+
+.sans-serif{
+    font-family: sans-serif;
+}
+
+.monospace {
+    font-family: monospace;
+}
+
+.cursive {
+    font-family: cursive;
+}
+
+.fantasy{
+    font-family: fantasy;
+}
+
+.times-new-roman{
+    font-family: "Times New Roman", Times, serif;
+}
+/* mes épaisseurs */
+
+.gras{
+    font-weight: bold;
+    font-style: italic;
+}
+
+.decoration1 {
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.decoration2 {
+    text-decoration: line-through red solid;
+    text-transform: capitalize;
+}
+
+.decoration3 {
+    text-decoration: line-through rgb(91, 46, 175)(17, 0, 255) wavy;
+}
+
+.decoration4 {
+    text-decoration: overline;
+    text-transform: lowercase;
+}
+
